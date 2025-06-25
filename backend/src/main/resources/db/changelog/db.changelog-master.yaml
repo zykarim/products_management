@@ -1,0 +1,39 @@
+databaseChangeLog:
+  - property:
+      dbms: h2
+      name: now
+      value: now()
+  - property:
+      dbms: postgresql
+      name: now
+      value: current_timestamp
+
+  # Float type definition
+  - property:
+      dbms: postgresql, h2
+      name: floatType
+      value: float4
+  - property:
+      dbms: mysql, oracle, mssql, mariadb
+      name: floatType
+      value: float
+
+  # Clob type definition
+  - property:
+      dbms: h2
+      name: clobType
+      value: longvarchar
+  - property:
+      dbms: mysql, oracle, mssql, mariadb, postgresql
+      name: clobType
+      value: clob
+
+  # UUID type definition
+  - property:
+      dbms: h2, postgresql
+      name: uuidType
+      value: uuid
+
+
+  - include:
+      file: db/changelog/changes/001-initial-changelog.yaml
