@@ -37,3 +37,7 @@ databaseChangeLog:
 
   - include:
       file: db/changelog/changes/001-initial-changelog.yaml
+  - include:
+      file: db/changelog/changes/20250625_093238_changelog.yaml
+  - include:
+      file: db/changelog/changes/load-data/load-products.yaml

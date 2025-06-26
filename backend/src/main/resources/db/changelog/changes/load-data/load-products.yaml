@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: load-products-with-columns
+      author: kziky
+      changes:
+        - loadData:
+            file: db/changelog/data/product-data.csv
+            separator: ";"
+            tableName: product
+            encoding: UTF-8
+            usePreparedStatements: false
+            columns:
+              - column:
+                  name: name
+                  type: string
+              - column:
+                  name: description
+                  type: string
+              - column:
+                  name: price
+                  type: numeric
+              - column:
+                  name: date_created
+                  type: computed
+              - column:
+                  name: date_updated
+                  type: computed
+              - column:
+                  name: date_deleted
+                  type: date

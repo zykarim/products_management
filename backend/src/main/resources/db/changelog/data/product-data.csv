@@ -1,0 +1,6 @@
+name;description;price;date_created;date_updated;date_deleted
+Ordinateur portable Dell;"Dell Inspiron 15 avec 16 Go RAM et SSD 512 Go";899.99;now();now();
+Souris sans fil Logitech;"Souris ergonomique sans fil, modèle MX Master 3";79.50;now();now();
+Casque Bose QC45;"Casque antibruit Bluetooth, autonomie 24h";299.00;now();now();
+Écran Samsung 27 pouces;"Écran incurvé Full HD, HDMI/DisplayPort";229.90;now();now();
+Clavier mécanique Corsair;"Clavier RGB, switches Cherry MX Red";139.99;now();now();

@@ -1,0 +1,36 @@
+databaseChangeLog:
+- changeSet:
+    id: 1750843974278-1
+    author: kziky (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: date_created
+            type: timestamp(6)
+        tableName: product
+- changeSet:
+    id: 1750843974278-2
+    author: kziky (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            name: date_deleted
+            type: timestamp(6)
+        tableName: product
+- changeSet:
+    id: 1750843974278-3
+    author: kziky (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: date_updated
+            type: timestamp(6)
+        tableName: product
+
