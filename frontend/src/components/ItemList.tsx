@@ -3,8 +3,6 @@ import { useDeleteItem, useItems, useUpdateItem } from '../hooks/useItems';
 import type { Item } from '../types';
 import EditModal from './EditModal';
 
-
-
 export default function ItemList() {
   const { data: items = [] } = useItems();
   const deleteItem = useDeleteItem();
