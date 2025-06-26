@@ -1,0 +1,22 @@
+databaseChangeLog:
+- changeSet:
+    id: 1750951012804-1
+    author: kziky (generated)
+    changes:
+    - dropColumn:
+        columnName: date_created
+        tableName: product
+- changeSet:
+    id: 1750951012804-2
+    author: kziky (generated)
+    changes:
+    - dropColumn:
+        columnName: date_deleted
+        tableName: product
+- changeSet:
+    id: 1750951012804-3
+    author: kziky (generated)
+    changes:
+    - dropColumn:
+        columnName: date_updated
+        tableName: product
