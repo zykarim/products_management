@@ -71,6 +71,7 @@ Build and run:
 	./mvnw spring-boot:run
 
 The API will be available at http://localhost:8082/api
+```text
 API Endpoints
 Method	Endpoint	Description
 GET	/api/products	Get all products
@@ -78,6 +79,7 @@ GET	/api/products/{id}	Get product by ID
 POST	/api/products	Create new product
 PUT	/api/products/{id}	Update existing product
 DELETE	/api/products/{id}	Delete product
+```
 
 4. Frontend Setaup (React + Vite)
 
