@@ -53,31 +53,42 @@ project-root/
 	Port: 5431
 
 These can be modified in:
+
 	backend/src/main/resources/application.yml for local development
 	devops/docker-compose.yml for Docker deployment
 
 3. Backend Setup (Spring Boot)
-   Navigate to the backend directory:
+
+Navigate to the backend directory:
+
 	```bash
 	cd backend
-   Build and run:
+
+Build and run:
+
 	```bash
 	./mvnw spring-boot:run
+
 The API will be available at http://localhost:8082/api
 
 4. Frontend Setaup (React + Vite)
-   Navigate to the frontend directory:
+
+Navigate to the frontend directory:
+
 	```bash
 	cd frontend
 
-   Install dependencies:
+Install dependencies:
+
 	```bash
 	npm install
 
-   Run the development server:
+Run the development server:
+
 	```bash
 	npm run dev
-   The app will be available at http://localhost:5173
+
+The app will be available at http://localhost:5173
 
 
 
