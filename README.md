@@ -18,21 +18,22 @@ This project is a full-stack CRUD application built with:
 
 ## 📁 Project Structure
 
+```text
 project-root/
-├── backend/ # Spring Boot application
-│ ├── src/main/
-│ ├── Dockerfile
-│ └── pom.xml
-├── frontend/ # React application
-│ ├── src/
-│ ├── Dockerfile
-│ └── vite.config.ts
-├── devops/ # DevOps resources
-│ ├── docker-compose.yml
+├── backend/               # Spring Boot application
+│   ├── src/main/
+│   ├── Dockerfile
+│   └── pom.xml
+├── frontend/             # React application
+│   ├── src/
+│   ├── Dockerfile
+│   └── vite.config.ts
+├── devops/               # DevOps resources
+│   ├── docker-compose.yml   # PostgreSQL Database setup in a Docker container
 └── README.md
+```
 
-
-## Quick Start with Docker Compose
+## Quick Start :
 
 1. Clone the repository:
    ```bash
@@ -70,6 +71,13 @@ Build and run:
 	./mvnw spring-boot:run
 
 The API will be available at http://localhost:8082/api
+API Endpoints
+Method	Endpoint	Description
+GET	/api/products	Get all products
+GET	/api/products/{id}	Get product by ID
+POST	/api/products	Create new product
+PUT	/api/products/{id}	Update existing product
+DELETE	/api/products/{id}	Delete product
 
 4. Frontend Setaup (React + Vite)
 
